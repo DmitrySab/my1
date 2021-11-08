@@ -12,5 +12,12 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <!--item name="android:textSize" >50dp</item-->
+        <item name="android:button">@style/myb</item>
+    </style>
+
+    <style name="myb" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="android:textSize" >150dp</item>
+
     </style>
 </resources>
