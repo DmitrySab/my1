@@ -14,7 +14,7 @@
         android:text="@string/hello"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></TextView>
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
         android:id="@+id/TV_bye"
@@ -23,19 +23,18 @@
         android:text="@string/bye"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"></TextView>
+        app:layout_constraintStart_toStartOf="parent"/>
 
     <Button
-
         android:id="@+id/button_change"
-        style="@style/Theme.MaterialComponents.DayNight"
+        style="@style/BigButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/buttonText"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></Button>
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <EditText
         android:id="@+id/key_text"
@@ -61,6 +60,8 @@
         app:layout_constraintVertical_chainStyle="packed" />
 
     <Button
+        android:background= "@drawable/but_draw"
+        style="@style/SmallButton"
         android:id="@+id/button_next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -70,7 +71,9 @@
         app:layout_constraintBottom_toTopOf="@id/TV_bye" />
 
     <Button
+
         android:id="@+id/button_link"
+        style="@style/BigButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="открыть ссылку"
@@ -90,10 +93,13 @@
 
     <ImageButton
         android:id="@+id/button_map"
+        style="@android:style/Widget.DeviceDefault.ImageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="16dp"
+        android:background="#0B497A"
+        android:scaleType="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@android:drawable/ic_menu_mapmode" />
