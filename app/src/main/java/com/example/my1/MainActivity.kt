@@ -40,8 +40,8 @@ class MainActivity : AppCompatActivity() {
 
         buttonChange.setOnClickListener { change() }
 
-        val intent = Intent(this,Activity2::class.java)
-        intent.putExtra(KEY2,keyText.getText().toString())
+        val intent = Intent(this,ActivityRecyclerView::class.java)
+        //intent.putExtra(KEY2,keyText.getText().toString())
 
         buttonNext.setOnClickListener{
             startActivity(intent)
