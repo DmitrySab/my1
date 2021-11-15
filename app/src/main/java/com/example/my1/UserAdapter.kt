@@ -9,13 +9,13 @@ class UserAdapter(private val userNameList:List<String>) : RecyclerView.Adapter<
 
         val userItemView =
             LayoutInflater.from(parent.context)
-                .inflate(R.layout.user_list_item,parent)
+                .inflate(R.layout.user_list_item,parent,false)
         return UserViewHolder(userItemView)
     }
 
     override fun onBindViewHolder(holder: UserViewHolder, position: Int) {
         val userName = userNameList[position]
-        holder.bind(userName)
+        holder.bind(position.toString() + " " +userName)
     }
 
     override fun getItemCount(): Int {
