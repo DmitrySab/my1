@@ -103,26 +103,22 @@ class MainActivity : AppCompatActivity() {
 
     override fun onStart() {
         super.onStart()
-        Log.d(TAG, "Start \nКогда, бушуя в бурной мгле,\n" +
-                "Играло море с берегами,")
+        Log.d(TAG, "Start")
     }
 
     override fun onResume() {
         super.onResume()
-        Log.d(TAG, "Resume \nКогда луч молний озарял\n" +
-                "Ее всечасно блеском алым")
+        Log.d(TAG, "Resume")
     }
 
     override fun onPause() {
         super.onPause()
-        Log.d(TAG, "Pause \nИ ветер бился и летал\n" +
-                "С ее летучим покрывалом? ")
+        Log.d(TAG, "Pause ")
     }
 
     override fun onStop() {
         super.onStop()
-        Log.d(TAG, "Stop \nПрекрасно море в бурной мгле\n" +
-                "И небо в блесках без лазури;")
+        Log.d(TAG, "Stop ")
     }
 
     override fun onRestart() {
@@ -132,8 +128,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onDestroy() {
         super.onDestroy()
-        Log.d(TAG, "Destroy \nНо верь мне: дева на скале\n" +
-                "Прекрасней волн, небес и бури.")
+        Log.d(TAG, "Destroy ")
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
